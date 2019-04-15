@@ -23,7 +23,7 @@ else:
   partial_serial_dev = 'ttyAMA0'
   
 serial_dev = '/dev/%s' % partial_serial_dev
-stop_getty = 'sudo systemctl stop serial-getty@t%s.service' % partial_serial_dev
+stop_getty = 'sudo systemctl stop serial-getty@%s.service' % partial_serial_dev
 start_getty = 'sudo systemctl start serial-getty@%s.service' % partial_serial_dev
 
 # major version of running python
